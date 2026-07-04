@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Advanced Selectors</title>
+     <style>
+          .new {
+               color: red;
+          }
+.new.bold {
+     font-weight: bold;
+}
+.new.bold.size {
+     font-size: 1.5rem;
+}
+ 
+.size h4 {
+     color: rgb(7, 7, 118);
+}
+.new, .bold, div, .size {
+     text-align: center;
+}
+          
+          </style>
+</head>
+<body>
+     <main>
+          <p class ="new"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugit quidem consectetur quibusdam corrupti odio vitae magni perspiciatis esse laudantium.</p>
+          <p class="new bold"> this is a second paragraph.</p>
+          <h4 class="new bold size"> this is a heading 4</h4>
+          <p class="new bold size"> this is a third paragraph.</p>
+          <div> 
+               <p> this is a paragraph inside a div.</p>
+          </div>
+     </main>
+     
+</body>
+</html>

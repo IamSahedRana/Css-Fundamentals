@@ -5,18 +5,57 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title> Css Fundamentals</title>
      <style>
+
+#css {
+     background-color: green;
+     color: white;
+     padding: 20px;
+     text-align: center;
+     width: 100%;
+     font-size: 1.5rem;
+     font-weight: 500;
+     text-align: center;
+
+}
+
+
+  /* Section wise styling */
+section {
+     margin: 20px;  
+     background-color: lightskyblue;
+     padding: 20px;
+     text-align: center;
+}
+
+
+          /* Universal Selector */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-size: 16px;
+     color: red;
+}
      p {
-          color:green;
-     }
+          color:green; 
+     } 
      h4 {
           color:blue;
      }
      a {
           color:rgb(51, 51, 14);
      }
-     .highlight {
-          color: rgb(198, 15, 198);     
-     }
+/* Tag Selector */
+
+     p { color: green; }
+     h4 { color: blue; }
+     a { color: rgb(51, 51, 14); }
+
+/* Class Selector */
+     .highlight { color: rgb(198, 15, 198); }
+
+/* ID Selector */
+     #unique { color: rgb(198, 15, 198); }
 </style>
 </head>
 <body>
@@ -31,5 +70,22 @@
      <p class="highlight"> This is a sixth paragraph.</p>
      <p class="highlight"> This is a seventh paragraph.</p>
      <p> This is an eighth paragraph.</p>
+     <p id="unique"> This is a ninth paragraph.</p>
+     <p id="unique"> This is a tenth paragraph.</p>
+     <i> This is an italic text.</i> <!--Global Selector-->
+
+     <main>
+          <section>
+            <h2 class="css1">What is CSS?</h2>
+            <p class="css">CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It allows you to control the layout, colors, fonts, and overall appearance of web pages.</p>
+          </section>
+          <section>
+            <h2 class="css">What is CSS?</h2>
+            <p class="css">CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It allows you to control the layout, colors, fonts, and overall appearance of web pages.</p>
+          </section>
+          <section>
+            <h2>What is CSS?</h2>
+            <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It allows you to control the layout, colors, fonts, and overall appearance of web pages.</p>
+          </section>
 </body>
 </html>
